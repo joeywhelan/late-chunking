@@ -1,0 +1,39 @@
+Create a small technical section image for a README/article section titled "Data Set".
+
+Canvas and format:
+- Generate as a landscape PNG using the API-supported landscape size.
+- Compose the image so it can be cleanly center-cropped and resized to 420 x 280 px for inline article use.
+- Compact spot image: not a full architecture diagram, not a banner, not a dashboard.
+- Use large simple shapes, minimal labels, and no tiny details.
+
+Section context:
+This section explains that the demo uses two synthetic corpora and loads them into four Elastic indices. Corpus A is a Product FAQ dataset with 20 documents. Corpus B is a fictional SEC 10-K filing dataset with 18 documents across 3 companies. Each corpus is indexed twice: once with standard chunk embeddings and once with late-chunked embeddings.
+
+Visual concept:
+Show one compact dataset-to-index vignette:
+- On the left/top, a small stack of Product FAQ cards with simple product icons: headphones, fitness tracker, smart speaker, and phone case.
+- On the right/top, a small stack of SEC 10-K filing pages with financial table lines, section markers, and cross-reference arrows.
+- Below them, show four compact Elastic index containers:
+  - `faq_standard`
+  - `faq_late`
+  - `filing_standard`
+  - `filing_late`
+- Use short arrows from each dataset stack into its two corresponding index containers.
+- Include a small accurate Elastic brand mark near the index containers.
+
+Core message:
+The image should make clear that the experiment has two intentionally different datasets and four comparable Elastic indices: standard vs late chunking for Product FAQ, and standard vs late chunking for SEC 10-K filings.
+
+Labels:
+Use concise readable labels only:
+- "Product FAQ"
+- "SEC 10-K"
+- "standard"
+- "late"
+- "Elastic indices"
+Avoid dense tables, long code, fake documents, fake company names, and tiny illegible text.
+
+Style:
+- Sophisticated engineering illustration with clean line work, subtle depth, crisp typography, and a neutral palette.
+- Suggested colors: light neutral background, charcoal text, Elastic-inspired accents for indices, muted teal for data flow, amber for FAQ similarity/context bleed, green/blue for structured filing references.
+- Keep all important content in the center 75% of the image so it survives resizing to 420 x 280 px.

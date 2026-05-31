@@ -1,0 +1,128 @@
+[
+  {
+    "section_id": "wts_intro",
+    "company_id": "wts",
+    "item": "Item 1",
+    "title": "Watts — Business Overview",
+    "content": "Watts Water Technologies, Inc. (the \"Company\"), through its subsidiaries, is one of the world's leading manufacturers and providers of products and solutions that manage and conserve the flow of fluids and energy into, through, and out of buildings for the water quality, water conservation, water safety, and water flow control markets."
+  },
+  {
+    "section_id": "wts_employees",
+    "company_id": "wts",
+    "item": "Item 1",
+    "title": "Watts — Employees",
+    "content": "As of December 31, 2023, the Company had approximately 5,100 employees worldwide."
+  },
+  {
+    "section_id": "wts_operating_margin",
+    "company_id": "wts",
+    "item": "Item 7",
+    "title": "Watts — Operating Margin",
+    "content": "Its reported operating margin was 17.1% in 2023, an increase of 120 basis points compared to the prior year."
+  },
+  {
+    "section_id": "wts_cash_flow",
+    "company_id": "wts",
+    "item": "Item 7",
+    "title": "Watts — Cash Flow",
+    "content": "The Company generated operating cash flow of $311 million and free cash flow of $281 million for the full year 2023."
+  },
+  {
+    "section_id": "wts_operating_income",
+    "company_id": "wts",
+    "item": "Item 7",
+    "title": "Watts — Operating Income",
+    "content": "The Company's operating income was $350.9 million in 2023, an increase of $35.9 million, or 11.4%, compared to 2022."
+  },
+  {
+    "section_id": "wts_eps",
+    "company_id": "wts",
+    "item": "Item 7",
+    "title": "Watts — EPS",
+    "content": "The Company reported earnings per share of $7.82 for fiscal year 2023, an increase of 5% compared to the prior year."
+  },
+  {
+    "section_id": "mwa_intro",
+    "company_id": "mwa",
+    "item": "Item 1",
+    "title": "Mueller — Business Overview",
+    "content": "Mueller Water Products, Inc. (the \"Company\") is a leading manufacturer and marketer of products and services used in the transmission, distribution, and measurement of water in the United States and internationally."
+  },
+  {
+    "section_id": "mwa_employees",
+    "company_id": "mwa",
+    "item": "Item 1",
+    "title": "Mueller — Employees",
+    "content": "As of September 30, 2023, the Company had approximately 3,700 employees worldwide."
+  },
+  {
+    "section_id": "mwa_operating_margin",
+    "company_id": "mwa",
+    "item": "Item 7",
+    "title": "Mueller — Operating Margin",
+    "content": "Its reported operating margin was 14.3% in fiscal year 2023, an increase of 190 basis points compared to the prior year."
+  },
+  {
+    "section_id": "mwa_cash_flow",
+    "company_id": "mwa",
+    "item": "Item 7",
+    "title": "Mueller — Cash Flow",
+    "content": "The Company generated operating cash flow of $133 million and free cash flow of $97 million for the full year fiscal 2023."
+  },
+  {
+    "section_id": "mwa_operating_income",
+    "company_id": "mwa",
+    "item": "Item 7",
+    "title": "Mueller — Operating Income",
+    "content": "The Company's operating income was $151.6 million in fiscal 2023, an increase of $28.5 million, or 23.2%, compared to fiscal 2022."
+  },
+  {
+    "section_id": "mwa_eps",
+    "company_id": "mwa",
+    "item": "Item 7",
+    "title": "Mueller — EPS",
+    "content": "The Company reported earnings per share of $0.98 for fiscal year 2023, an increase of 15% compared to the prior year."
+  },
+  {
+    "section_id": "hayn_intro",
+    "company_id": "hayn",
+    "item": "Item 1",
+    "title": "Haynes — Business Overview",
+    "content": "Haynes International, Inc. (the \"Company\") is a leading developer, manufacturer, and marketer of technologically advanced, high-performance alloys primarily for use in the aerospace, industrial gas turbine, and chemical processing industries."
+  },
+  {
+    "section_id": "hayn_employees",
+    "company_id": "hayn",
+    "item": "Item 1",
+    "title": "Haynes — Employees",
+    "content": "As of September 30, 2023, the Company had approximately 1,850 employees worldwide."
+  },
+  {
+    "section_id": "hayn_operating_margin",
+    "company_id": "hayn",
+    "item": "Item 7",
+    "title": "Haynes — Operating Margin",
+    "content": "Its reported operating margin was 10.0% in fiscal year 2023, an increase of 450 basis points compared to the prior year."
+  },
+  {
+    "section_id": "hayn_cash_flow",
+    "company_id": "hayn",
+    "item": "Item 7",
+    "title": "Haynes — Cash Flow",
+    "content": "The Company generated operating cash flow of $66 million and free cash flow of $43 million for the full year fiscal 2023."
+  },
+  {
+    "section_id": "hayn_operating_income",
+    "company_id": "hayn",
+    "item": "Item 7",
+    "title": "Haynes — Operating Income",
+    "content": "The Company's operating income was $64.0 million in fiscal 2023, an increase of $28.2 million, or 78.9%, compared to fiscal 2022."
+  },
+  {
+    "section_id": "hayn_eps",
+    "company_id": "hayn",
+    "item": "Item 7",
+    "title": "Haynes — EPS",
+    "content": "The Company reported earnings per share of $5.53 for fiscal year 2023, an increase of 88% compared to the prior year."
+  }
+]

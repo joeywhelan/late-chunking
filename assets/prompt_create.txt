@@ -1,0 +1,45 @@
+Create a small technical section image for a README/article section titled "Create Elastic Environment".
+
+Canvas and format:
+- 420 x 280 px, 3:2 aspect ratio.
+- Export as PNG only.
+- Designed as a small inline section illustration, not a full architecture diagram.
+- Compact spot image: avoid panoramic, banner, dashboard, or full-page diagram composition.
+- Crisp, legible, stylish, and technical. Avoid cartoon style, people, robots, generic AI imagery, and decorative clutter.
+
+Section context:
+This section explains that the demo uses Terraform from a Jupyter/Python workflow to provision an Elastic Serverless Elasticsearch project. Elastic and Jina API keys are stored in a local Terraform variables file that is not committed to GitHub. Terraform outputs connection values that are written to a `.env` file and later loaded from Python with `load_dotenv`.
+
+Visual concept:
+Show one compact provisioning vignette:
+- A Terraform block in the center creates a small Elastic Serverless cloud panel.
+- A locked `tfvars` file sits beside the Terraform block to indicate private API keys.
+- A small `.env` file appears below as the generated local output consumed by Python.
+- Include one short arrow from Terraform to Elastic Serverless and one short arrow back to `.env`.
+- Include a small accurate Elastic brand mark near the Elastic Serverless panel.
+
+Composition rules:
+- Use a single centered cluster of 3-4 objects, not a multi-step architecture diagram.
+- Keep labels to an absolute minimum: "Terraform", "Elastic Serverless", "private tfvars", and ".env".
+- Keep all content large enough to read at small inline size.
+- Do not draw a full workflow, multiple columns, large cloud landscape, or dense UI.
+
+Brand marks:
+- Elastic brand mark is allowed and should be small, accurate, and placed near the Elastic Serverless project.
+- Terraform brand mark is allowed if it can be rendered accurately, but keep it secondary.
+- Do not include a Jina.ai brand mark in this image unless it appears only as a small locked API-key reference; this section is about creating the Elastic environment, not inference endpoints.
+
+Labels:
+Use concise readable labels only where helpful:
+- "demo.ipynb"
+- "Terraform"
+- "private tfvars"
+- "Elastic Serverless"
+- ".env"
+- "load_dotenv"
+Avoid dense code, long terminal output, fake secrets, or tiny illegible text.
+
+Style:
+- Sophisticated engineering diagram with subtle depth, clean line work, crisp typography, and a neutral palette.
+- Suggested colors: light neutral background, charcoal text, Elastic-inspired accent colors, muted teal for configuration flow, amber for the locked private secrets file.
+- The image should communicate secure, reproducible environment setup: local config plus Terraform creates Elastic Serverless, then outputs are loaded into Python.

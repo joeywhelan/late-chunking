@@ -1,0 +1,27 @@
+Create a professional LinkedIn article cover image at exactly 1920 x 1080 pixels, 16:9 aspect ratio.
+
+Subject: an empirical engineering article and reproducible Python/Jupyter demo about late chunking for retrieval/RAG systems using Jina.ai embeddings and Elastic/Elasticsearch as the retrieval and evaluation backend. The demo compares standard chunk embedding against late chunking across two synthetic datasets and proves the core message: late chunking is not always better.
+
+Demo details to represent visually:
+- Dataset A is a Product FAQ corpus: 20 fictional consumer electronics FAQ entries across product families such as AcousticWave headphones, Nimbus fitness trackers, Echo Sphere smart speakers, and ArmorShield phone cases. Each FAQ is self-contained, highly similar to neighboring entries, and differs by precise facts like battery hours, warranty months, weight, and price. Late chunking hurts this dataset because adjacent near-duplicate FAQs blur together.
+- Dataset B is a fictional SEC 10-K filing corpus: 18 financial report sections with defined terms, pronouns, back-references, risk factors, MD&A-style language, financial-statement references, and cross-section dependencies. Late chunking helps this dataset because full-document context resolves terms and references that isolated chunks miss.
+- The notebook creates two Jina.ai inference paths: a standard `jina-embeddings-v3` endpoint and a late-chunking `jina-embeddings-v3` endpoint.
+- The notebook loads four Elastic indices: `faq_standard`, `faq_late`, `filing_standard`, and `filing_late`.
+- Retrieval quality is evaluated in Elastic with rank evaluation metrics: MRR and NDCG at k=5.
+- Results direction: Product FAQ standard wins clearly while late chunking degrades retrieval; SEC filing late chunking wins clearly while standard chunking struggles.
+
+Visual concept:
+A clean, modern technical illustration split into two coherent experiment lanes. The left lane is labeled visually as the FAQ experiment without requiring readable text: rows of compact product FAQ cards, repeated product-family silhouettes such as headphones, fitness trackers, smart speakers, and phone cases, and nearly identical small fact fields. Show the late-chunking path causing these similar FAQ cards to smear into overlapping vectors, while the standard path keeps crisp separate vectors and a correct search hit.
+
+The right lane is labeled visually as the SEC filing experiment without requiring readable text: stacked annual-report pages, financial tables, risk-factor sections, MD&A-like paragraphs, defined-term callouts, arrows between sections, and reference links across pages. Show the standard path losing context with isolated chunks, while the late-chunking path carries document-level connections into cleaner vectors and a correct search hit.
+
+In the center, show the actual demo stack as a readable visual flow, but keep text minimal and non-tiny: Jupyter/Python notebook cells load JSON corpora, Jina.ai embedding stages produce standard and late vectors, Elastic/Elasticsearch stores four vector-search indices, then rank evaluation charts compare MRR and NDCG. Make Elastic and Jina.ai usage visually prominent through tasteful platform UI panels, search-index motifs, embedding vectors, infrastructure diagrams, and small accurate Elastic and Jina.ai brand marks placed near their respective pipeline stages.
+
+Style:
+Sophisticated editorial tech aesthetic for LinkedIn, crisp and high-contrast, realistic paper/document textures mixed with clean vector UI elements, subtle depth, no cartoon style, no stock-photo people, no robots, no glowing sci-fi cliches. Use a balanced palette with neutral light background, deep charcoal, muted teal, amber accents, and a small amount of red/green contrast for worse/better outcomes.
+
+Composition:
+Keep the most important visual elements centered within the middle 70% of the canvas so LinkedIn cropping does not cut them off. Leave quiet negative space near the top-left for an article title overlay if needed. Avoid tiny illegible UI text, except for clean, recognizable Elastic and Jina.ai brand marks and very short labels if needed, such as "FAQ", "10-K", "MRR", "NDCG", "standard", and "late". Do not generate unrelated logos, fake brand names, or readable code. The image should clearly communicate a concrete experiment: Jina.ai-powered embeddings flowing into Elastic vector search, four compared indices, and measured retrieval results showing that late chunking helps the SEC filing corpus and hurts the product FAQ corpus.
+
+Output requirements:
+1920 x 1080 px, static image, sharp details, suitable for LinkedIn article cover upload, export as PNG only.

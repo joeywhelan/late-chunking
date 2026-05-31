@@ -1,0 +1,44 @@
+Create a small technical section image for a README/article section titled "Inference Endpoints".
+
+Canvas and format:
+- 420 x 280 px, 3:2 aspect ratio.
+- Export as PNG only.
+- Designed as a small inline section illustration, not a full architecture diagram.
+- Compact spot image: avoid panoramic, banner, dashboard, or full-page diagram composition.
+- Crisp, legible, stylish, and technical. Avoid cartoon style, people, robots, generic AI imagery, and decorative clutter.
+
+Section context:
+This section explains that the demo creates two Elastic inference endpoints that call the Jina.ai hosted `jina-embeddings-v3` model. One endpoint is configured for standard embedding, and the other endpoint uses the same model with `late_chunking` set to `True`. Both endpoints use `input_type: search` and are later used to compare retrieval quality.
+
+Visual concept:
+Show one compact inference-endpoint vignette:
+- Two small Elastic endpoint cards sit side by side: "standard" and "late".
+- Both endpoint cards connect with short arrows to one shared Jina.ai `jina-embeddings-v3` model block.
+- The standard card shows one chunk becoming one clean vector.
+- The late card shows several chunks inside a small context band before vectors are produced.
+- Include small accurate Elastic and Jina.ai brand marks near their respective parts.
+
+Composition rules:
+- Use a single centered cluster of 4-5 objects, not a full architecture diagram.
+- Keep labels to an absolute minimum: "standard", "late", "Jina v3", and "vectors".
+- Keep all content large enough to read at small inline size.
+- Do not draw a full workflow, multiple columns, large dashboard, code panel, or dense UI.
+
+Brand marks:
+- Elastic and Jina.ai brand marks are allowed and should be small, accurate, and placed near their respective layers.
+- Do not include unrelated brands or fake logos.
+
+Labels:
+Use concise readable labels only where helpful:
+- "Elastic inference endpoints"
+- "standard"
+- "late_chunking: True"
+- "jina-embeddings-v3"
+- "input_type: search"
+- "vectors"
+Avoid dense code, long JSON, fake secrets, and tiny illegible text.
+
+Style:
+- Sophisticated engineering diagram with subtle depth, clean line work, crisp typography, and a neutral palette.
+- Suggested colors: light neutral background, charcoal text, Elastic-inspired accent colors for the endpoint layer, muted teal for Jina/vector flow, amber highlight for the late-chunking context window.
+- The image should communicate two comparable inference endpoints backed by the same Jina.ai embedding model, with one using standard chunk embedding and the other using late chunking.

@@ -1,0 +1,66 @@
+Create a stylish technical architecture image for the README.md of a Python/Jupyter demo repository.
+
+Canvas and format:
+- 1600 x 900 px, 16:9 aspect ratio.
+- Export as PNG only.
+- Clean README-friendly architecture diagram, legible on GitHub in both light and dark mode.
+- Technical, polished, modern, and restrained. Avoid cartoon style, stock-photo people, robots, and generic AI fantasy imagery.
+
+Demo subject:
+This repository demonstrates when late chunking helps or hurts retrieval quality. It compares standard chunk embedding against late chunking using Jina.ai embeddings, Elastic/Elasticsearch vector search, and Elastic rank evaluation metrics.
+
+Core message to communicate:
+Late chunking is a specialized retrieval technique, not a universal upgrade. It degrades retrieval for self-contained Product FAQ entries because context bleeds between similar neighboring chunks. It improves retrieval for cross-referential SEC 10-K filing sections because document-level context resolves defined terms and references.
+
+Architecture to show:
+1. Source data layer:
+   - `assets/corpus_a_faq.json`: Product FAQ corpus with 20 fictional consumer electronics FAQ entries.
+   - Visual motifs: product FAQ cards, headphones, fitness tracker, smart speaker, phone case, repeated nearly identical fields such as battery, warranty, weight, and price.
+   - `assets/corpus_b_filing.json`: fictional SEC 10-K filing corpus with 18 financial report sections.
+   - Visual motifs: annual-report pages, financial tables, risk factors, MD&A paragraphs, defined terms, section references, arrows between document sections.
+
+2. Notebook orchestration layer:
+   - `demo.ipynb` as the central orchestrator.
+   - Show Python/Jupyter notebook cells loading JSON data, creating inference endpoints, creating indices, ingesting documents, running queries, and evaluating retrieval.
+
+3. Jina.ai embedding layer:
+   - Two parallel embedding paths using `jina-embeddings-v3`.
+   - Standard path: each chunk or section embedded independently.
+   - Late-chunking path: full document or array context passed through the model before per-chunk vectors are produced.
+   - Use small accurate Jina.ai brand mark near this stage.
+   - Show vector outputs as compact arrays or dot-cloud embeddings, not long readable code.
+
+4. Elastic / Elasticsearch retrieval layer:
+   - Four indices:
+     - `faq_standard`
+     - `faq_late`
+     - `filing_standard`
+     - `filing_late`
+   - Represent these as four clearly separated Elastic index containers.
+   - Use small accurate Elastic brand mark near this stage.
+   - Show vector search / kNN retrieval flowing from query embeddings into the indices.
+
+5. Evaluation layer:
+   - Elastic `_rank_eval` compares retrieval quality at k=5.
+   - Metrics: MRR and NDCG.
+   - Show two compact result panels:
+     - Product FAQ: standard wins, late chunking loses.
+     - SEC 10-K filing: late chunking wins, standard loses.
+   - Use simple upward/downward bars or check/cross indicators. Keep exact numbers optional; if numbers are included, use these:
+     - FAQ MRR: standard 1.0000, late 0.5857.
+     - FAQ NDCG: standard 0.9868, late 0.6161.
+     - Filing MRR: standard 0.4028, late 0.7917.
+     - Filing NDCG: standard 0.5539, late 0.8462.
+
+Composition:
+- Use a left-to-right pipeline with two dataset lanes feeding into a shared notebook, then splitting into standard and late Jina.ai embedding paths, then into four Elastic indices, then into evaluation results.
+- Keep the diagram understandable at a glance. Use clean arrows, grouped panels, and restrained labels.
+- Brand marks are allowed for Elastic and Jina.ai, but keep them small and accurate, supporting the architecture rather than dominating it.
+- Include concise readable labels where useful: "Product FAQ", "SEC 10-K", "demo.ipynb", "Jina embeddings", "standard", "late chunking", "Elastic indices", "rank_eval", "MRR", and "NDCG".
+- Do not invent unrelated services, databases, clouds, or logos.
+- Avoid tiny dense text, fake terminal output, fake code blocks, or illegible microcopy.
+
+Style:
+- Sophisticated engineering diagram with subtle depth, clean line work, crisp typography, and a balanced neutral palette.
+- Suggested colors: off-white or very dark neutral background, charcoal text, muted teal for Jina/vector flow, Elastic-inspired accent colors, amber for warnings/context bleed, green for wins, and red for losses.
+- Make the two outcomes visually distinct: FAQ lane shows context bleed and degraded late results; SEC 10-K lane shows cross-reference resolution and improved late results.

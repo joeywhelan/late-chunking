@@ -1,0 +1,38 @@
+Create a small technical section image for a README/article section titled "Retrieval & Measurement".
+
+Canvas and format:
+- Generate as a landscape PNG using the API-supported landscape size.
+- Compose the image so it can be cleanly center-cropped and resized to 420 x 280 px for inline article use.
+- Compact spot image: not a full architecture diagram, not a banner, not a dashboard.
+- Use large simple shapes, minimal labels, and no tiny details.
+
+Section context:
+This section explains that the demo uses an AI-generated relevance judgment list to evaluate retrieval. Queries are run against the Elastic indices, and Elastic `_rank_eval` scores the results at k=5 using MRR and NDCG. The article compares standard chunking against late chunking for both datasets.
+
+Visual concept:
+Show one compact retrieval-evaluation vignette:
+- A small query card enters an Elastic search/rank-evaluation panel.
+- The panel fans out to two simplified result lists: one for "standard" and one for "late".
+- Each result list shows ranked search hits as short stacked rows, with a highlighted correct hit.
+- A small judgment/checklist card sits beside the results, representing relevance judgments.
+- At the bottom or side, show two compact metric cards: "MRR" and "NDCG".
+- Include a small accurate Elastic brand mark near the search/rank-evaluation panel.
+
+Core message:
+The image should make clear that retrieval quality is measured, not guessed: queries plus relevance judgments go into Elastic `_rank_eval`, which compares standard vs late chunking using MRR and NDCG.
+
+Labels:
+Use concise readable labels only:
+- "query"
+- "standard"
+- "late"
+- "_rank_eval"
+- "MRR"
+- "NDCG"
+- "k=5"
+Avoid dense tables, long code, fake terminal output, fake scores, and tiny illegible text.
+
+Style:
+- Sophisticated engineering illustration with clean line work, subtle depth, crisp typography, and a neutral palette.
+- Suggested colors: light neutral background, charcoal text, Elastic-inspired accents for the evaluation panel, muted teal for query flow, green for correct hits, amber for rank comparison.
+- Keep all important content in the center 75% of the image so it survives resizing to 420 x 280 px.

@@ -1,0 +1,192 @@
+{
+  "rating_scale": {
+    "3": "Primary answer — directly and completely answers the query",
+    "2": "Highly relevant — substantial relevant information but not the primary answer",
+    "1": "Tangentially relevant — related concepts but does not answer the query",
+    "0": "Not relevant (omitted)"
+  },
+  "corpus_a": [
+    {
+      "query": "How many hours of battery life does the AcousticWave M4 have?",
+      "ratings": [
+        {"chunk_id": "FAQ-002", "rating": 3},
+        {"chunk_id": "FAQ-001", "rating": 1},
+        {"chunk_id": "FAQ-003", "rating": 1}
+      ]
+    },
+    {
+      "query": "What warranty comes with the AcousticWave M6?",
+      "ratings": [
+        {"chunk_id": "FAQ-004", "rating": 3},
+        {"chunk_id": "FAQ-003", "rating": 1},
+        {"chunk_id": "FAQ-005", "rating": 1}
+      ]
+    },
+    {
+      "query": "How much does the AcousticWave M5 weigh?",
+      "ratings": [
+        {"chunk_id": "FAQ-003", "rating": 3},
+        {"chunk_id": "FAQ-002", "rating": 1},
+        {"chunk_id": "FAQ-004", "rating": 1}
+      ]
+    },
+    {
+      "query": "What is the retail price of the AcousticWave M7?",
+      "ratings": [
+        {"chunk_id": "FAQ-005", "rating": 3},
+        {"chunk_id": "FAQ-004", "rating": 1}
+      ]
+    },
+    {
+      "query": "How long does the Nimbus Pro Gen2 last on a single charge?",
+      "ratings": [
+        {"chunk_id": "FAQ-007", "rating": 3},
+        {"chunk_id": "FAQ-006", "rating": 1},
+        {"chunk_id": "FAQ-008", "rating": 1}
+      ]
+    },
+    {
+      "query": "What manufacturer warranty does the Nimbus Pro Gen4 include?",
+      "ratings": [
+        {"chunk_id": "FAQ-009", "rating": 3},
+        {"chunk_id": "FAQ-008", "rating": 1},
+        {"chunk_id": "FAQ-010", "rating": 1}
+      ]
+    },
+    {
+      "query": "What does the Nimbus Pro Gen3 weigh?",
+      "ratings": [
+        {"chunk_id": "FAQ-008", "rating": 3},
+        {"chunk_id": "FAQ-007", "rating": 1},
+        {"chunk_id": "FAQ-009", "rating": 1}
+      ]
+    },
+    {
+      "query": "How much does the Nimbus Pro Gen5 cost?",
+      "ratings": [
+        {"chunk_id": "FAQ-010", "rating": 3},
+        {"chunk_id": "FAQ-009", "rating": 1}
+      ]
+    },
+    {
+      "query": "What is the wattage output of the Echo Sphere Plus?",
+      "ratings": [
+        {"chunk_id": "FAQ-012", "rating": 3},
+        {"chunk_id": "FAQ-011", "rating": 1},
+        {"chunk_id": "FAQ-013", "rating": 1}
+      ]
+    },
+    {
+      "query": "What warranty is included with the Echo Sphere Pro?",
+      "ratings": [
+        {"chunk_id": "FAQ-013", "rating": 3},
+        {"chunk_id": "FAQ-012", "rating": 1},
+        {"chunk_id": "FAQ-014", "rating": 1}
+      ]
+    },
+    {
+      "query": "How heavy is the Echo Sphere Max?",
+      "ratings": [
+        {"chunk_id": "FAQ-014", "rating": 3},
+        {"chunk_id": "FAQ-013", "rating": 1},
+        {"chunk_id": "FAQ-015", "rating": 1}
+      ]
+    },
+    {
+      "query": "What is the price of the Echo Sphere Ultra?",
+      "ratings": [
+        {"chunk_id": "FAQ-015", "rating": 3},
+        {"chunk_id": "FAQ-014", "rating": 1}
+      ]
+    },
+    {
+      "query": "How many feet of drop protection does the ArmorShield X provide?",
+      "ratings": [
+        {"chunk_id": "FAQ-018", "rating": 3},
+        {"chunk_id": "FAQ-017", "rating": 1},
+        {"chunk_id": "FAQ-019", "rating": 1}
+      ]
+    },
+    {
+      "query": "What warranty does the ArmorShield Elite carry?",
+      "ratings": [
+        {"chunk_id": "FAQ-020", "rating": 3},
+        {"chunk_id": "FAQ-019", "rating": 1}
+      ]
+    }
+  ],
+  "corpus_b": [
+    {
+      "query": "How many employees does Watts Water Technologies have?",
+      "ratings": [
+        {"chunk_id": "wts_employees", "rating": 3}
+      ]
+    },
+    {
+      "query": "What was Watts Water Technologies' reported operating margin in 2023?",
+      "ratings": [
+        {"chunk_id": "wts_operating_margin", "rating": 3}
+      ]
+    },
+    {
+      "query": "What was Watts Water Technologies' operating income in 2023?",
+      "ratings": [
+        {"chunk_id": "wts_operating_income", "rating": 3}
+      ]
+    },
+    {
+      "query": "What were Watts Water Technologies' reported earnings per share in fiscal year 2023?",
+      "ratings": [
+        {"chunk_id": "wts_eps", "rating": 3}
+      ]
+    },
+    {
+      "query": "How many employees does Mueller Water Products have?",
+      "ratings": [
+        {"chunk_id": "mwa_employees", "rating": 3}
+      ]
+    },
+    {
+      "query": "What was Mueller Water Products' reported operating margin in fiscal year 2023?",
+      "ratings": [
+        {"chunk_id": "mwa_operating_margin", "rating": 3}
+      ]
+    },
+    {
+      "query": "What was Mueller Water Products' operating income in fiscal year 2023?",
+      "ratings": [
+        {"chunk_id": "mwa_operating_income", "rating": 3}
+      ]
+    },
+    {
+      "query": "What were Mueller Water Products' reported earnings per share in fiscal year 2023?",
+      "ratings": [
+        {"chunk_id": "mwa_eps", "rating": 3}
+      ]
+    },
+    {
+      "query": "How many employees does Haynes International have?",
+      "ratings": [
+        {"chunk_id": "hayn_employees", "rating": 3}
+      ]
+    },
+    {
+      "query": "What was Haynes International's reported operating margin in fiscal year 2023?",
+      "ratings": [
+        {"chunk_id": "hayn_operating_margin", "rating": 3}
+      ]
+    },
+    {
+      "query": "What was Haynes International's operating income in fiscal year 2023?",
+      "ratings": [
+        {"chunk_id": "hayn_operating_income", "rating": 3}
+      ]
+    },
+    {
+      "query": "What were Haynes International's reported earnings per share in fiscal year 2023?",
+      "ratings": [
+        {"chunk_id": "hayn_eps", "rating": 3}
+      ]
+    }
+  ]
+}
