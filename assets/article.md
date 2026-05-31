@@ -3,7 +3,7 @@
 # Late Chunking Is a Tool, Not an Upgrade
 *This demo measures late chunking against standard embedding on two corpora — one where it hurts and one where it helps — producing concrete retrieval numbers that engineers can use to make an informed choice.*
 
-This article covers some recent experimentation I did with late chunking.  Late chunking was introduced in this is the [blog](https://jina.ai/news/late-chunking-in-long-context-embedding-models/) from Jina.ai in 2024.  I put together two test cases here to compare/contrast use cases where this capability increases or decreases search relevance.
+This article covers some recent experimentation I did with late chunking.  Late chunking was introduced in this [blog](https://jina.ai/news/late-chunking-in-long-context-embedding-models/) from Jina.ai in 2024.  I put together two test cases here to compare/contrast use cases where this capability increases or decreases search relevance.
 
 ---
 
